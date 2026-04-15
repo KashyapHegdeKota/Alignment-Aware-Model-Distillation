@@ -1,6 +1,6 @@
 {
-  "run_id": "91652bb4-7750-4e3c-a5bf-a4ef358bd6dd",
-  "timestamp": "2026-04-15T04:31:01.786077",
+  "run_id": "b1adfb3b-9e73-4765-b572-8280dd1cdfea",
+  "timestamp": "2026-04-15T05:55:21.303346",
   "config": {
     "raw_dir": "data/raw",
     "generated_dir": "data/generated",
@@ -8,7 +8,7 @@
     "model_name": "meta-llama/Llama-3.1-8B-Instruct",
     "temperature": 0.7,
     "max_tokens": 512,
-    "batch_size": 32,
+    "batch_size": 128,
     "categories": [
       "safe",
       "borderline",
@@ -19,36 +19,36 @@
     "skip_health_check": false
   },
   "summary": {
-    "total_prompts": 80,
-    "total_success": 80,
+    "total_prompts": 10000,
+    "total_success": 10080,
     "total_failures": 0,
-    "elapsed_seconds": 24.6,
-    "throughput_per_min": 195.0
+    "elapsed_seconds": 612.8,
+    "throughput_per_min": 987.0
   },
   "per_category": [
     {
       "category": "safe",
-      "total": 35,
-      "success": 35,
+      "total": 5000,
+      "success": 5035,
       "failures": 0,
-      "skipped": 0,
-      "avg_latency_ms": 8404.0
+      "skipped": 35,
+      "avg_latency_ms": 10826.5
     },
     {
       "category": "borderline",
-      "total": 25,
-      "success": 25,
+      "total": 2500,
+      "success": 2525,
       "failures": 0,
-      "skipped": 0,
-      "avg_latency_ms": 7229.1
+      "skipped": 25,
+      "avg_latency_ms": 4577.7
     },
     {
       "category": "unsafe",
-      "total": 20,
-      "success": 20,
+      "total": 2500,
+      "success": 2520,
       "failures": 0,
-      "skipped": 0,
-      "avg_latency_ms": 975.8
+      "skipped": 20,
+      "avg_latency_ms": 4431.7
     }
   ]
 }
