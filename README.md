@@ -37,7 +37,32 @@ ASU SOL (Compute)
 - Student Model Training  
 
 ---
+## Directory Structure
 
+```text
+alignment_distillation/
+├── data/
+│   ├── raw/                 # Initial prompt datasets (safe, risky, borderline)
+│   ├── generated/           # Teacher model outputs (JSONL files)
+│   └── filtered/            # Final, safe dataset ready for student training
+├── models/
+│   └── student_checkpoints/ # Saved LoRA/fine-tuned weights
+├── src/
+│   ├── generation/
+│   │   └── vllm_runner.py   # Script to batch-generate teacher responses via vLLM
+│   ├── evaluation/
+│   │   └── safety_judge.py  # Script to score/filter responses (Llama-Guard 3)
+│   ├── training/
+│   │   └── sft_trainer.py   # Hugging Face TRL script to fine-tune the student
+│   └── utils/
+│       └── formatting.py    # Helpers for ChatML/Prompt formatting
+├── app/
+│   └── frontend.py          # Streamlit comparison interface
+├── notebooks/               # Jupyter notebooks for data EDA and testing
+├── requirements.txt         
+└── README.md
+```
+---
 ## Workflow
 
 1. Generate prompts across safe, risky, and borderline categories  
@@ -47,48 +72,6 @@ ASU SOL (Compute)
 5. Train a smaller student model on filtered data  
 6. Compare teacher and student outputs on new prompts  
 7. Visualize differences with safety scores and highlighted risks  
-
----
-
-## Implementation Steps
-
-1. Teacher Model Setup  
-   - Host Llama 3 on ASU SOL using GPU  
-   - Serve using vLLM for fast inference  
-
-2. Dataset Generation  
-   - Generate prompts using templates  
-   - Run teacher inference to collect responses  
-   - Store results in JSONL format  
-
-3. Safety Evaluation  
-   - Assign safety scores to each response  
-   - Label risks such as manipulation, toxicity, bias, unsafe advice  
-   - Identify and highlight unsafe spans  
-
-4. Alignment-Aware Filtering  
-   - Remove or downweight unsafe responses  
-   - Keep high-quality aligned outputs for training  
-
-5. Student Model Training  
-   - Fine-tune a smaller model such as TinyLlama or Phi  
-   - Use filtered dataset for distillation  
-
-6. Evaluation  
-   - Compare teacher vs student on:  
-     - Helpfulness  
-     - Safety  
-     - Risk frequency  
-     - Alignment quality  
-
-7. Frontend Interface  
-   - Input prompt  
-   - Display:  
-     - Teacher output  
-     - Student output  
-     - Safety scores  
-     - Risk labels  
-     - Highlighted unsafe text  
 
 ---
 
