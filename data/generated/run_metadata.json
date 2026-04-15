@@ -1,0 +1,54 @@
+{
+  "run_id": "91652bb4-7750-4e3c-a5bf-a4ef358bd6dd",
+  "timestamp": "2026-04-15T04:31:01.786077",
+  "config": {
+    "raw_dir": "data/raw",
+    "generated_dir": "data/generated",
+    "teacher_url": "http://localhost:8000",
+    "model_name": "meta-llama/Llama-3.1-8B-Instruct",
+    "temperature": 0.7,
+    "max_tokens": 512,
+    "batch_size": 32,
+    "categories": [
+      "safe",
+      "borderline",
+      "unsafe"
+    ],
+    "resume": true,
+    "dry_run": false,
+    "skip_health_check": false
+  },
+  "summary": {
+    "total_prompts": 80,
+    "total_success": 80,
+    "total_failures": 0,
+    "elapsed_seconds": 24.6,
+    "throughput_per_min": 195.0
+  },
+  "per_category": [
+    {
+      "category": "safe",
+      "total": 35,
+      "success": 35,
+      "failures": 0,
+      "skipped": 0,
+      "avg_latency_ms": 8404.0
+    },
+    {
+      "category": "borderline",
+      "total": 25,
+      "success": 25,
+      "failures": 0,
+      "skipped": 0,
+      "avg_latency_ms": 7229.1
+    },
+    {
+      "category": "unsafe",
+      "total": 20,
+      "success": 20,
+      "failures": 0,
+      "skipped": 0,
+      "avg_latency_ms": 975.8
+    }
+  ]
+}
