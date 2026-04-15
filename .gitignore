@@ -31,7 +31,6 @@ secrets.json
 api_keys.json
 
 # ── Data — generated & filtered (too large for git) ───────────────────────────
-data/generated/
 data/filtered/
 
 # Keep raw prompts (small, hand-curated — worth versioning)
