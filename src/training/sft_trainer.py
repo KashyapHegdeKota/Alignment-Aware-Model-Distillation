@@ -270,8 +270,8 @@ class SampleWeightCallback:
 # ---------------------------------------------------------------------------
 
 def train(cfg: TrainingConfig) -> None:
-    from transformers import TrainingArguments, set_seed
-    from trl import SFTTrainer, DataCollatorForCompletionOnlyLM
+    from transformers import TrainingArguments, set_seed, DataCollatorForLanguageModeling
+    from trl import SFTTrainer
 
     set_seed(cfg.seed)
 
@@ -296,7 +296,7 @@ def train(cfg: TrainingConfig) -> None:
     # DataCollatorForCompletionOnlyLM masks everything before the
     # response_template token, so the model only learns to generate responses.
     response_template = "<|im_start|>assistant\n"
-    collator = DataCollatorForCompletionOnlyLM(
+    collator = DataCollatorForLanguageModeling(
         response_template=response_template,
         tokenizer=tokenizer,
         mlm=False,
