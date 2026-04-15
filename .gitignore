@@ -1,0 +1,79 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+wheels/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# ── Virtual environments ───────────────────────────────────────────────────────
+.env
+.venv
+env/
+venv/
+ENV/
+
+# ── Environment variables / secrets ───────────────────────────────────────────
+.env.local
+.env.*.local
+*.env
+secrets.json
+api_keys.json
+
+# ── Data — generated & filtered (too large for git) ───────────────────────────
+data/generated/
+data/filtered/
+
+# Keep raw prompts (small, hand-curated — worth versioning)
+!data/raw/
+
+# ── Model weights & checkpoints ───────────────────────────────────────────────
+models/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.gguf
+
+# ── Jupyter notebooks ─────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+# Uncomment to also ignore notebook outputs (keep cell outputs out of git):
+# *.ipynb
+
+# ── Logs & runs ───────────────────────────────────────────────────────────────
+logs/
+*.log
+runs/
+wandb/
+outputs/
+mlruns/
+
+# ── HuggingFace cache ─────────────────────────────────────────────────────────
+.cache/
+~/.cache/huggingface/
+
+# ── OS / editor ───────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+tmp/
+temp/
+scratch/
