@@ -33,7 +33,7 @@ api_keys.json
 # ── Data — generated & filtered (too large for git) ───────────────────────────
 data/generated/
 data/filtered/
-
+2
 # Keep raw prompts (small, hand-curated — worth versioning)
 !data/raw/
 
