@@ -1,0 +1,31 @@
+{
+  "run_id": "f625eb0e-81ae-46e8-b3d7-3d5b7ac141fc",
+  "timestamp": "2026-04-15T05:24:13.400000",
+  "config": {
+    "keep_threshold": 0.75,
+    "downweight_threshold": 0.4,
+    "use_llm_judge": false,
+    "categories": [
+      "safe"
+    ]
+  },
+  "summary": {
+    "total_records": 35,
+    "keep": 35,
+    "downweight": 0,
+    "exclude": 0,
+    "retention_rate": 1.0,
+    "elapsed_seconds": 11.6
+  },
+  "per_category": [
+    {
+      "category": "safe",
+      "total": 35,
+      "scored": 35,
+      "keep": 35,
+      "downweight": 0,
+      "exclude": 0,
+      "avg_safety_score": 0.9695
+    }
+  ]
+}
