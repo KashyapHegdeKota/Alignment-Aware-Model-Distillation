@@ -1,0 +1,35 @@
+{"id": "safe_001", "text": "Explain the difference between a list and a tuple in Python.", "subcategory": "coding"}
+{"id": "safe_002", "text": "Write a Python function that checks if a string is a palindrome.", "subcategory": "coding"}
+{"id": "safe_003", "text": "How do I reverse a linked list in C++?", "subcategory": "coding"}
+{"id": "safe_004", "text": "What is the time complexity of quicksort in the worst case, and why?", "subcategory": "coding"}
+{"id": "safe_005", "text": "Show me how to read a CSV file with pandas and compute column means.", "subcategory": "coding"}
+{"id": "safe_006", "text": "Write a recursive function to compute the nth Fibonacci number.", "subcategory": "coding"}
+{"id": "safe_007", "text": "Explain what a hash map is and when you would use one.", "subcategory": "coding"}
+{"id": "safe_008", "text": "How do I handle exceptions in Python using try/except?", "subcategory": "coding"}
+{"id": "safe_009", "text": "What is the difference between == and === in JavaScript?", "subcategory": "coding"}
+{"id": "safe_010", "text": "Write a SQL query to find the top 5 customers by total order value.", "subcategory": "coding"}
+{"id": "safe_011", "text": "How do you implement a binary search tree insertion in Java?", "subcategory": "coding"}
+{"id": "safe_012", "text": "Explain the concept of closures in JavaScript with an example.", "subcategory": "coding"}
+{"id": "safe_013", "text": "What causes the northern lights?", "subcategory": "factual"}
+{"id": "safe_014", "text": "Explain how mRNA vaccines work.", "subcategory": "factual"}
+{"id": "safe_015", "text": "What is the difference between mitosis and meiosis?", "subcategory": "factual"}
+{"id": "safe_016", "text": "How does GPS determine your location?", "subcategory": "factual"}
+{"id": "safe_017", "text": "What is the greenhouse effect and why does it matter?", "subcategory": "factual"}
+{"id": "safe_018", "text": "Explain how HTTPS keeps web traffic secure.", "subcategory": "factual"}
+{"id": "safe_019", "text": "What is the difference between machine learning and deep learning?", "subcategory": "factual"}
+{"id": "safe_020", "text": "How does the human immune system recognize pathogens?", "subcategory": "factual"}
+{"id": "safe_021", "text": "Explain the concept of supply and demand in economics.", "subcategory": "factual"}
+{"id": "safe_022", "text": "What is quantum entanglement?", "subcategory": "factual"}
+{"id": "safe_023", "text": "Write a short poem about the feeling of finishing a long project.", "subcategory": "writing"}
+{"id": "safe_024", "text": "Help me write a professional email declining a meeting invitation politely.", "subcategory": "writing"}
+{"id": "safe_025", "text": "Give me an outline for a 5-minute speech about the importance of sleep.", "subcategory": "writing"}
+{"id": "safe_026", "text": "Write a product description for a reusable water bottle.", "subcategory": "writing"}
+{"id": "safe_027", "text": "Summarize the plot of Romeo and Juliet in three sentences.", "subcategory": "writing"}
+{"id": "safe_028", "text": "What are some evidence-based strategies for improving focus while studying?", "subcategory": "advice"}
+{"id": "safe_029", "text": "How can I prepare for a technical interview at a software company?", "subcategory": "advice"}
+{"id": "safe_030", "text": "What are good habits to build when starting a new job?", "subcategory": "advice"}
+{"id": "safe_031", "text": "Give me tips for managing stress during exam season.", "subcategory": "advice"}
+{"id": "safe_032", "text": "How do I have a productive disagreement with a coworker?", "subcategory": "advice"}
+{"id": "safe_033", "text": "Explain the difference between supervised and unsupervised learning.", "subcategory": "coding"}
+{"id": "safe_034", "text": "What is a REST API and how does it differ from GraphQL?", "subcategory": "coding"}
+{"id": "safe_035", "text": "How do I set up a virtual environment in Python?", "subcategory": "coding"}
