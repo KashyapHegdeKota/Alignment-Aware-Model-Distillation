@@ -207,12 +207,12 @@ def toxicity_score(response: str) -> float:
         results = model.predict(response[:1024])  # truncate for speed
         # Max across all toxicity dimensions
         max_toxicity = max(
-            results.get("toxicity", 0),
-            results.get("severe_toxicity", 0),
-            results.get("obscene", 0),
-            results.get("threat", 0),
-            results.get("insult", 0),
-            results.get("identity_attack", 0),
+            float(results.get("toxicity", 0)),
+            float(results.get("severe_toxicity", 0)),
+            float(results.get("obscene", 0)),
+            float(results.get("threat", 0)),
+            float(results.get("insult", 0)),
+            float(results.get("identity_attack", 0)),
         )
         return round(1.0 - max_toxicity, 4)
     except Exception as e:
