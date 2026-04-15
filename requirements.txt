@@ -1,0 +1,38 @@
+# ── Core ML / Training ────────────────────────────────────────────────────────
+torch>=2.2.0
+transformers>=4.40.0
+trl>=0.8.6
+peft>=0.10.0
+accelerate>=0.29.0
+datasets>=2.18.0
+bitsandbytes>=0.43.0          # 4-bit / 8-bit quantization for student training
+
+# ── Teacher Inference ─────────────────────────────────────────────────────────
+vllm>=0.4.0                   # install separately on Sol GPU node
+aiohttp>=3.9.0
+tqdm>=4.66.0
+
+# ── Safety Evaluation ─────────────────────────────────────────────────────────
+detoxify>=0.5.1               # local toxicity scoring (no API key needed)
+# perspective-api via requests (see safety_judge.py — optional API key)
+
+# ── Data / Utilities ──────────────────────────────────────────────────────────
+numpy>=1.26.0
+pandas>=2.2.0
+scikit-learn>=1.4.0
+jsonlines>=4.0.0
+
+# ── Frontend ──────────────────────────────────────────────────────────────────
+streamlit>=1.33.0
+plotly>=5.20.0
+
+# ── Evaluation ────────────────────────────────────────────────────────────────
+evaluate>=0.4.1
+rouge-score>=0.1.2
+
+# ── Dev / Notebooks ───────────────────────────────────────────────────────────
+jupyter>=1.0.0
+ipywidgets>=8.1.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+python-dotenv>=1.0.0
